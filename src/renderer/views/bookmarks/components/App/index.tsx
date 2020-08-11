@@ -158,12 +158,12 @@ const BookmarksList = observer(() => {
 
 export default hot(
   observer(() => {
-    let dialogTitle = 'New folder';
+    let dialogTitle = '新建文件夹';
 
     if (store.dialogContent === 'edit') {
-      dialogTitle = 'Edit bookmark';
+      dialogTitle = '修改书签';
     } else if (store.dialogContent === 'rename-folder') {
-      dialogTitle = 'Rename folder';
+      dialogTitle = '重命名文件夹';
     }
 
     return (
@@ -174,20 +174,20 @@ export default hot(
         >
           <WebUIStyle />
           <GlobalNavigationDrawer></GlobalNavigationDrawer>
-          <NavigationDrawer title="Bookmarks" search onSearchInput={onInput}>
+          <NavigationDrawer title="书签" search onSearchInput={onInput}>
             <Tree />
             <div style={{ flex: 1 }} />
             <NavigationDrawer.Item
               icon={ICON_NEW_FOLDER}
               onClick={onNewFolderClick}
             >
-              New folder
+              新建文件夹
             </NavigationDrawer.Item>
             <NavigationDrawer.Item icon={ICON_DOWNLOAD} onClick={onImportClick}>
-              Import
+              导入
             </NavigationDrawer.Item>
             <NavigationDrawer.Item icon={ICON_SAVE} onClick={onExportClick}>
-              Export
+              导出
             </NavigationDrawer.Item>
           </NavigationDrawer>
           <ContextMenu
@@ -200,19 +200,19 @@ export default hot(
           >
             {store.currentBookmark && !store.currentBookmark.isFolder && (
               <ContextMenuItem onClick={onEditClick} icon={ICON_EDIT}>
-                Edit
+                编辑
               </ContextMenuItem>
             )}
             {store.currentBookmark && store.currentBookmark.isFolder && (
               <ContextMenuItem onClick={onRenameClick} icon={ICON_EDIT}>
-                Rename
+                重命名
               </ContextMenuItem>
             )}
             <ContextMenuItem
               onClick={onRemoveClick(store.currentBookmark)}
               icon={ICON_TRASH}
             >
-              Delete
+              删除
             </ContextMenuItem>
           </ContextMenu>
           <Content onScroll={onScroll}>
@@ -225,7 +225,7 @@ export default hot(
             style={{ width: '100%' }}
             dark={store.theme['dialog.lightForeground']}
             ref={store.nameInputRef}
-            label="Name"
+            label="名称"
           ></Textfield>
 
           <Textfield
@@ -236,7 +236,7 @@ export default hot(
             }}
             dark={store.theme['dialog.lightForeground']}
             ref={store.urlInputRef}
-            label="URL"
+            label="网址"
           ></Textfield>
 
           <DialogButtons>
@@ -251,10 +251,10 @@ export default hot(
                 store.theme['dialog.lightForeground'] ? 'white' : 'black'
               }
             >
-              Cancel
+              取消
             </Button>
             <Button onClick={onSaveClick} style={{ marginLeft: 8 }}>
-              Save
+              保存
             </Button>
           </DialogButtons>
           <div style={{ clear: 'both' }}></div>

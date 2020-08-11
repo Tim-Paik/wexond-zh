@@ -35,7 +35,7 @@ export const NavigationDrawer = ({
       )}
       {search && (
         <Search>
-          <Input placeholder="Search" onInput={onSearchInput} />
+          <Input placeholder="搜索" onInput={onSearchInput} />
         </Search>
       )}
       <MenuItems>{children}</MenuItems>

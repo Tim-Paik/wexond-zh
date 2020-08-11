@@ -32,7 +32,7 @@ export class ITab {
   public isPlaying = false;
 
   @observable
-  public title = 'New tab';
+  public title = '新标签页';
 
   @observable
   public loading = true;
@@ -178,7 +178,7 @@ export class ITab {
 
     const width =
       (containerWidth - pinnedTabs * (TAB_PINNED_WIDTH + TABS_PADDING)) /
-        realTabsLength -
+      realTabsLength -
       TABS_PADDING -
       store.tabs.leftMargins / realTabsLength;
 

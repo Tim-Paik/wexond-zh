@@ -92,25 +92,25 @@ export default hot(
         <Container>
           <WebUIStyle />
           <GlobalNavigationDrawer></GlobalNavigationDrawer>
-          <NavigationDrawer title="History" search onSearchInput={onInput}>
+          <NavigationDrawer title="历史记录" search onSearchInput={onInput}>
             <RangeItem icon={ICON_ALL} range="all">
-              All
+              全部
             </RangeItem>
             <RangeItem icon={ICON_TODAY} range="today">
-              Today
+              今天
             </RangeItem>
             <RangeItem icon={ICON_HISTORY} range="yesterday">
-              Yesterday
+              昨天
             </RangeItem>
             <RangeItem icon={ICON_WEEK} range="last-week">
-              Last week
+              上周
             </RangeItem>
             <RangeItem icon={ICON_CALENDAR} range="older">
-              Older
+              更早
             </RangeItem>
             <div style={{ flex: 1 }} />
             <NavigationDrawer.Item icon={ICON_TRASH} onClick={onClearClick}>
-              Clear browsing data
+              清除浏览数据
             </NavigationDrawer.Item>
           </NavigationDrawer>
           <Content onScroll={onScroll}>

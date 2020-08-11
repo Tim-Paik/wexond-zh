@@ -19,9 +19,9 @@ export const getSectionLabel = (date: Date) => {
     date.getMonth() === current.getMonth()
   ) {
     if (current.getDate() === date.getDate()) {
-      prefix = 'Today - ';
+      prefix = '今天 - ';
     } else if (current.getDate() - 1 === date.getDate()) {
-      prefix = 'Yesterday - ';
+      prefix = '昨天 - ';
     }
   }
 

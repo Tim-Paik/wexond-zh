@@ -67,7 +67,7 @@ export const App = hot(
                 store.theme['dialog.lightForeground'] ? 'white' : 'black'
               }
             >
-              Reset
+              重置
             </Button>
           </Buttons>
         </StyledApp>

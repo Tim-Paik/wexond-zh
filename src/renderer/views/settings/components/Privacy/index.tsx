@@ -17,9 +17,7 @@ const DoNotTrackToggle = observer(() => {
 
   return (
     <Row onClick={onSwitchChange('doNotTrack')}>
-      <Title>
-        Send a &quot;Do Not Track&quot; request with your browsing traffic
-      </Title>
+      <Title>随浏览流量一起发送“不跟踪”请求</Title>
       <Control>
         <Switch value={doNotTrack} />
       </Control>
@@ -30,13 +28,13 @@ const DoNotTrackToggle = observer(() => {
 export const Privacy = () => {
   return (
     <>
-      <Header>Privacy</Header>
+      <Header>隐私</Header>
       <Button
         type="outlined"
         foreground={BLUE_500}
         onClick={onClearBrowsingData}
       >
-        Clear browsing data
+        清除浏览数据
       </Button>
       <DoNotTrackToggle />
     </>

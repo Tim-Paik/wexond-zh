@@ -34,14 +34,14 @@ export const App = hot(
       >
         <StyledApp>
           <UIStyle />
-          <Title>Login</Title>
+          <Title>登录</Title>
           <Subtitle>{store.url}</Subtitle>
           <Textfield
             dark={store.theme['dialog.lightForeground']}
             ref={ref1}
             test={(str) => str.trim().length !== 0}
             style={{ width: '100%', marginTop: 16 }}
-            label="Username"
+            label="用户名"
           ></Textfield>
           <PasswordInput
             dark={store.theme['dialog.lightForeground']}
@@ -49,7 +49,7 @@ export const App = hot(
             style={{ width: '100%', marginTop: 16 }}
           ></PasswordInput>
           <Buttons>
-            <Button onClick={onClick}>Login</Button>
+            <Button onClick={onClick}>登录</Button>
             <Button
               background={
                 store.theme['dialog.lightForeground']
@@ -62,7 +62,7 @@ export const App = hot(
               style={{ marginLeft: 8 }}
               onClick={() => sendResponse(null)}
             >
-              Cancel
+              取消
             </Button>
           </Buttons>
           <div style={{ clear: 'both' }}></div>

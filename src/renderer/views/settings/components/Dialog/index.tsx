@@ -13,7 +13,7 @@ const onHideClick = () => {
 export const CloseButton = () => {
   return (
     <Button background="transparent" foreground="#3F51B5" onClick={onHideClick}>
-      CLOSE
+      关闭
     </Button>
   );
 };

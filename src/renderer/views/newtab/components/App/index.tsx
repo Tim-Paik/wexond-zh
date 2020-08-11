@@ -65,31 +65,31 @@ export default hot(
               <Menu>
                 <IconItem
                   imageSet={store.imageVisible}
-                  title="Settings"
+                  title="设置"
                   icon={ICON_SETTINGS}
                   onClick={onIconClick('settings')}
                 ></IconItem>
                 <IconItem
                   imageSet={store.imageVisible}
-                  title="History"
+                  title="历史记录"
                   icon={ICON_HISTORY}
                   onClick={onIconClick('history')}
                 ></IconItem>
                 <IconItem
                   imageSet={store.imageVisible}
-                  title="Bookmarks"
+                  title="书签"
                   icon={ICON_BOOKMARKS}
                   onClick={onIconClick('bookmarks')}
                 ></IconItem>
                 <IconItem
                   imageSet={store.imageVisible}
-                  title="Downloads"
+                  title="下载内容"
                   icon={ICON_DOWNLOAD}
                   onClick={onIconClick('downloads')}
                 ></IconItem>
                 <IconItem
                   imageSet={store.imageVisible}
-                  title="Extensions"
+                  title="扩展程序"
                   icon={ICON_EXTENSIONS}
                   onClick={onIconClick('extensions')}
                 ></IconItem>

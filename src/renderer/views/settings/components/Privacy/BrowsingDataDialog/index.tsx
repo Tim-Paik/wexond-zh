@@ -8,7 +8,7 @@ import store from '../../../store';
 export default observer(() => {
   return (
     <Dialog visible={store.dialogContent === 'privacy'} style={{ width: 344 }}>
-      <Title>Clear browsing data</Title>
+      <Title>清除浏览数据</Title>
       <Content></Content>
       <Buttons>
         <CloseButton />

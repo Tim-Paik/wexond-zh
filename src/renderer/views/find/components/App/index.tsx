@@ -66,7 +66,7 @@ export const App = observer(() => {
             onKeyPress={onKeyPress}
             onChange={onInput}
             ref={store.findInputRef}
-            placeholder="Find in page"
+            placeholder="查找"
           />
           <Occurrences>{store.findInfo.occurrences}</Occurrences>
           <Buttons>

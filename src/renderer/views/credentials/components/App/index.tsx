@@ -33,7 +33,7 @@ const onClose = () => {
 const Fields = observer(() => {
   return (
     <div style={{ display: store.content !== 'list' ? 'block' : 'none' }}>
-      <Textfield ref={store.usernameRef} label="Username" />
+      <Textfield ref={store.usernameRef} label="用户名" />
       <PasswordInput ref={store.passwordRef} />
     </div>
   );
@@ -48,7 +48,7 @@ export const App = hot(
         ? 'Saved passwords for this site'
         : 'No passwords saved for this site';
     } else {
-      title = store.content === 'save' ? 'Save password?' : 'Update password?';
+      title = store.content === 'save' ? '保存密码？' : '更新密码？';
     }
 
     return (
@@ -67,7 +67,7 @@ export const App = hot(
               background="rgba(0, 0, 0, 0.08)"
               style={{ marginLeft: 'auto' }}
             >
-              Save
+              保存
             </Button>
           )}
           {store.content === 'list' && (
@@ -77,7 +77,7 @@ export const App = hot(
               style={{ marginRight: 'auto', padding: '0px 12px' }}
               onClick={onClose}
             >
-              Manage passwords
+              管理密码
             </Button>
           )}
           <Button
@@ -86,7 +86,7 @@ export const App = hot(
             onClick={onClose}
             style={{ marginLeft: 8 }}
           >
-            Close
+            关闭
           </Button>
         </Buttons>
         <div style={{ clear: 'both' }}></div>

@@ -30,7 +30,7 @@ export class Store extends DialogStore {
       const { bookmark, title, url, favicon } = data;
 
       if (!bookmark) {
-        this.dialogTitle = !bookmark ? 'Bookmark added' : 'Edit bookmark';
+        this.dialogTitle = !bookmark ? '已添加书签' : '修改书签';
       }
 
       this.bookmark = bookmark;

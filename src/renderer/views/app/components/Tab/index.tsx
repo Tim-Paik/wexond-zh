@@ -105,7 +105,7 @@ const onMouseUp = (tab: ITab) => (e: React.MouseEvent<HTMLDivElement>) => {
 const onContextMenu = (tab: ITab) => () => {
   const menu = remote.Menu.buildFromTemplate([
     {
-      label: 'New tab to the right',
+      label: '在右侧新建标签页',
       click: () => {
         store.tabs.addTab(
           {
@@ -116,7 +116,7 @@ const onContextMenu = (tab: ITab) => () => {
       },
     },
     {
-      label: 'Add to a new group',
+      label: '新增标签组',
       click: () => {
         const tabGroup = store.tabGroups.addGroup();
         tab.tabGroupId = tabGroup.id;
@@ -124,7 +124,7 @@ const onContextMenu = (tab: ITab) => () => {
       },
     },
     {
-      label: 'Remove from group',
+      label: '从标签组中移除',
       visible: !!tab.tabGroup,
       click: () => {
         tab.removeFromGroup();
@@ -134,26 +134,26 @@ const onContextMenu = (tab: ITab) => () => {
       type: 'separator',
     },
     {
-      label: 'Reload',
+      label: '重新加载',
       accelerator: 'CmdOrCtrl+R',
       click: () => {
         tab.callViewMethod('webContents.reload');
       },
     },
     {
-      label: 'Duplicate',
+      label: '复制标签页',
       click: () => {
         store.tabs.addTab({ active: true, url: tab.url });
       },
     },
     {
-      label: tab.isPinned ? 'Unpin tab' : 'Pin tab',
+      label: tab.isPinned ? '取消固定' : '固定标签页',
       click: () => {
         tab.isPinned ? store.tabs.unpinTab(tab) : store.tabs.pinTab(tab);
       },
     },
     {
-      label: tab.isMuted ? 'Unmute tab' : 'Mute tab',
+      label: tab.isMuted ? '取消静音' : '静音标签页',
       click: () => {
         tab.isMuted ? store.tabs.unmuteTab(tab) : store.tabs.muteTab(tab);
       },
@@ -162,14 +162,14 @@ const onContextMenu = (tab: ITab) => () => {
       type: 'separator',
     },
     {
-      label: 'Close tab',
+      label: '关闭标签页',
       accelerator: 'CmdOrCtrl+W',
       click: () => {
         tab.close();
       },
     },
     {
-      label: 'Close other tabs',
+      label: '关闭其他标签页',
       click: () => {
         for (const t of store.tabs.list) {
           if (t !== tab) {
@@ -179,7 +179,7 @@ const onContextMenu = (tab: ITab) => () => {
       },
     },
     {
-      label: 'Close tabs to the left',
+      label: '关闭左侧标签页',
       click: () => {
         for (let i = store.tabs.list.indexOf(tab) - 1; i >= 0; i--) {
           store.tabs.list[i].close();
@@ -187,7 +187,7 @@ const onContextMenu = (tab: ITab) => () => {
       },
     },
     {
-      label: 'Close tabs to the right',
+      label: '关闭右侧标签页',
       click: () => {
         for (
           let i = store.tabs.list.length - 1;
@@ -202,7 +202,7 @@ const onContextMenu = (tab: ITab) => () => {
       type: 'separator',
     },
     {
-      label: 'Revert closed tab',
+      label: '还原关闭的标签页',
       enabled: store.tabs.closedUrl !== '',
       click: () => {
         store.tabs.revertClosed();

@@ -161,12 +161,12 @@ if (
 
 if (window.location.href.startsWith(WEBUI_BASE_URL)) {
   window.addEventListener('DOMContentLoaded', () => {
-    if (hostname.startsWith('settings')) document.title = 'Settings';
-    else if (hostname.startsWith('history')) document.title = 'History';
-    else if (hostname.startsWith('bookmarks')) document.title = 'Bookmarks';
-    else if (hostname.startsWith('extensions')) document.title = 'Extensions';
+    if (hostname.startsWith('settings')) document.title = '设置';
+    else if (hostname.startsWith('history')) document.title = '历史记录';
+    else if (hostname.startsWith('bookmarks')) document.title = '书签';
+    else if (hostname.startsWith('extensions')) document.title = '扩展程序';
     else if (hostname.startsWith('newtab')) {
-      document.title = 'New tab';
+      document.title = '新标签页';
     }
   });
 

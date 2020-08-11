@@ -71,17 +71,17 @@ const MenuItem = observer(
     children: any;
     icon?: string;
   }) => (
-    <NavigationDrawer.Item
-      onClick={() => (store.selectedSection = section)}
-      selected={
-        store.selectedSection === section ||
-        (subSections && subSections.includes(store.selectedSection))
-      }
-      icon={icon}
-    >
-      {children}
-    </NavigationDrawer.Item>
-  ),
+      <NavigationDrawer.Item
+        onClick={() => (store.selectedSection = section)}
+        selected={
+          store.selectedSection === section ||
+          (subSections && subSections.includes(store.selectedSection))
+        }
+        icon={icon}
+      >
+        {children}
+      </NavigationDrawer.Item>
+    ),
 );
 
 const onBlur = () => {
@@ -147,9 +147,9 @@ export default hot(
     let dialogTitle = '';
 
     if (store.dialogContent === 'edit-search-engine') {
-      dialogTitle = 'Edit search engine';
+      dialogTitle = '编辑搜索引擎';
     } else if (store.dialogContent === 'add-search-engine') {
-      dialogTitle = 'Add search engine';
+      dialogTitle = '添加搜索引擎';
     }
 
     return (
@@ -174,19 +174,19 @@ export default hot(
           >
             {store.editedSearchEngine &&
               store.editedSearchEngine.keyword !==
-                store.searchEngine.keyword && (
+              store.searchEngine.keyword && (
                 <>
                   <ContextMenuItem onClick={onMakeDefaultClick} icon=" ">
-                    Make default
+                    设为默认
                   </ContextMenuItem>
                   <ContextMenuItem onClick={onRemoveClick} icon={ICON_TRASH}>
-                    Remove
+                    从列表中移除
                   </ContextMenuItem>
                 </>
               )}
             {store.editedSearchEngine && (
               <ContextMenuItem onClick={onEditClick} icon={ICON_EDIT}>
-                Edit
+                编辑
               </ContextMenuItem>
             )}
           </ContextMenu>
@@ -201,7 +201,7 @@ export default hot(
               style={{ width: '100%' }}
               dark={store.theme['dialog.lightForeground']}
               ref={store.searchEngineInputRef}
-              label="Search engine"
+              label="搜索引擎"
             ></Textfield>
 
             <Textfield
@@ -211,7 +211,7 @@ export default hot(
               }}
               dark={store.theme['dialog.lightForeground']}
               ref={store.searchEngineKeywordInputRef}
-              label="Keyword"
+              label="关键字"
             ></Textfield>
 
             <Textfield
@@ -221,7 +221,7 @@ export default hot(
               }}
               dark={store.theme['dialog.lightForeground']}
               ref={store.searchEngineUrlInputRef}
-              label="URL with %s in place of query"
+              label="网址格式（用“%s”代替搜索字词）"
             ></Textfield>
 
             <DialogButtons>
@@ -234,30 +234,30 @@ export default hot(
             </DialogButtons>
             <div style={{ clear: 'both' }}></div>
           </Dialog>
-          <NavigationDrawer title="Settings" search>
+          <NavigationDrawer title="设置" search>
             <MenuItem icon={ICON_PALETTE} section="appearance">
-              Appearance
+              外观
             </MenuItem>
             {process.env.ENABLE_AUTOFILL && (
               <MenuItem icon={ICON_AUTOFILL} section="autofill">
-                Autofill
+                自动填充
               </MenuItem>
             )}
             <MenuItem icon={ICON_POWER} section="startup">
-              On startup
+              启动时
             </MenuItem>
             <MenuItem
               icon={ICON_SEARCH}
               section="address-bar"
               subSections={['search-engines']}
             >
-              Address bar
+              地址栏
             </MenuItem>
             <MenuItem icon={ICON_DOWNLOAD} section="downloads">
-              Downloads
+              下载内容
             </MenuItem>
             <MenuItem icon={ICON_SHIELD} section="privacy">
-              Privacy
+              隐私
             </MenuItem>
             {/* <MenuItem section="permissions">Site permissions</MenuItem> */}
 

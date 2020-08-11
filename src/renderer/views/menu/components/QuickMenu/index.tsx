@@ -109,7 +109,7 @@ export const QuickMenu = observer(() => {
           )}
           <MenuItem onClick={onAlwaysClick}>
             <Icon icon={ICON_TOPMOST} />
-            <MenuItemTitle>Always on top</MenuItemTitle>
+            <MenuItemTitle>总是置顶</MenuItemTitle>
             <RightControl>
               <Switch dense value={store.alwaysOnTop}></Switch>
             </RightControl>
@@ -117,36 +117,36 @@ export const QuickMenu = observer(() => {
           <Line />
           <MenuItem onClick={goToWebUIPage('newtab')}>
             <Icon icon={ICON_TAB} />
-            <MenuItemTitle>New tab</MenuItemTitle>
+            <MenuItemTitle>新建标签页</MenuItemTitle>
             <Shortcut>Ctrl+T</Shortcut>
           </MenuItem>
           <MenuItem onClick={onNewWindowClick}>
             <Icon icon={ICON_WINDOW} />
-            <MenuItemTitle>New window</MenuItemTitle>
+            <MenuItemTitle>新建窗口</MenuItemTitle>
             <Shortcut>Ctrl+N</Shortcut>
           </MenuItem>
           <MenuItem onClick={onIncognitoClick}>
             <Icon icon={ICON_INCOGNITO} />
-            <MenuItemTitle>New incognito window</MenuItemTitle>
+            <MenuItemTitle>新建无痕窗口</MenuItemTitle>
             <Shortcut>Ctrl+Shift+N</Shortcut>
           </MenuItem>
           <Line />
           <MenuItem onClick={goToWebUIPage('history')} arrow>
             <Icon icon={ICON_HISTORY} />
-            <MenuItemTitle>History</MenuItemTitle>
+            <MenuItemTitle>历史记录</MenuItemTitle>
           </MenuItem>
           <MenuItem onClick={goToWebUIPage('bookmarks')} arrow>
             <Icon icon={ICON_BOOKMARKS} />
-            <MenuItemTitle>Bookmarks</MenuItemTitle>
+            <MenuItemTitle>书签</MenuItemTitle>
           </MenuItem>
           <MenuItem disabled onClick={goToWebUIPage('downloads')}>
             <Icon icon={ICON_DOWNLOAD} />
-            <MenuItemTitle>Downloads</MenuItemTitle>
+            <MenuItemTitle>下载内容</MenuItemTitle>
           </MenuItem>
           <Line />
           <MenuItem onClick={goToWebUIPage('settings')}>
             <Icon icon={ICON_SETTINGS} />
-            <MenuItemTitle>Settings</MenuItemTitle>
+            <MenuItemTitle>设置</MenuItemTitle>
           </MenuItem>
           {/* TODO: <MenuItem onClick={goToWebUIPage('extensions')}> */}
           <MenuItem
@@ -155,17 +155,17 @@ export const QuickMenu = observer(() => {
             )}
           >
             <Icon icon={ICON_EXTENSIONS} />
-            <MenuItemTitle>Extensions</MenuItemTitle>
+            <MenuItemTitle>扩展程序</MenuItemTitle>
           </MenuItem>
           <Line />
           <MenuItem onClick={onFindInPageClick}>
             <Icon icon={ICON_FIND} />
-            <MenuItemTitle>Find in page</MenuItemTitle>
+            <MenuItemTitle>查找</MenuItemTitle>
             <Shortcut>Ctrl+F</Shortcut>
           </MenuItem>
           <MenuItem onClick={onPrintClick}>
             <Icon icon={ICON_PRINT} />
-            <MenuItemTitle>Print</MenuItemTitle>
+            <MenuItemTitle>打印</MenuItemTitle>
             <Shortcut>Ctrl+P</Shortcut>
           </MenuItem>
         </MenuItems>

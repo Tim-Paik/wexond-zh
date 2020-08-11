@@ -7,15 +7,15 @@ export const getBookmarkTitle = (item: IBookmark) => {
   if (!item.static) return item.title;
 
   if (item.static === 'main') {
-    return 'Bookmarks bar';
+    return '书签栏';
   }
 
   if (item.static === 'mobile') {
-    return 'Mobile bookmarks';
+    return '移动设备书签';
   }
 
   if (item.static === 'other') {
-    return 'Other bookmarks';
+    return '其他书签';
   }
 
   return '';

@@ -98,18 +98,18 @@ class StartupControl extends React.PureComponent<Props, State> {
 
     return (
       <>
-        <Header>On Startup</Header>
+        <Header>启动时</Header>
         <Row style={rowStyle} onClick={this.select('empty')}>
           <RadioButton selected={this.state.value === 'empty'} />
-          <Title style={titleStyle}>Open the New Tab page</Title>
+          <Title style={titleStyle}>打开新标签页</Title>
         </Row>
         <Row style={rowStyle} onClick={this.select('continue')}>
           <RadioButton selected={this.state.value === 'continue'} />
-          <Title style={titleStyle}>Continue where you left off</Title>
+          <Title style={titleStyle}>从上次停下的地方继续</Title>
         </Row>
         <Row style={rowStyle} onClick={this.select('urls')}>
           <RadioButton selected={this.state.value === 'urls'} />
-          <Title style={titleStyle}>Open specific pages</Title>
+          <Title style={titleStyle}>打开特定页面</Title>
         </Row>
         {this.state.value === 'urls' && (
           <div style={{ marginLeft: 36 }}>
@@ -134,7 +134,7 @@ class StartupControl extends React.PureComponent<Props, State> {
               background={BLUE_500}
               onClick={this.onAddNewPageClick}
             >
-              Add a new page
+              添加网页
             </Button>
           </div>
         )}

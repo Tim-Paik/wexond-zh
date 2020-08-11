@@ -146,7 +146,7 @@ export const AddressBar = observer(() => {
           onFocus={onFocus}
           onMouseUp={onMouseUp}
           onChange={onChange}
-          placeholder="Search or type in a URL"
+          placeholder="搜索或输入网址"
           visible={!store.addressbarTextVisible || store.addressbarValue === ''}
           value={store.addressbarValue}
         ></Input>

@@ -59,7 +59,7 @@ export const App = hot(
           <UIStyle />
           <Title>{store.dialogTitle}</Title>
           <Row>
-            <Label>Name</Label>
+            <Label>名称</Label>
             <Input
               tabIndex={0}
               className="textfield"
@@ -68,7 +68,7 @@ export const App = hot(
             />
           </Row>
           <Row>
-            <Label>Folder</Label>
+            <Label>文件夹</Label>
             <Dropdown
               dark={store.theme['dialog.lightForeground']}
               tabIndex={1}
@@ -79,7 +79,7 @@ export const App = hot(
             </Dropdown>
           </Row>
           <Buttons>
-            <Button onClick={onDone}>Done</Button>
+            <Button onClick={onDone}>完成</Button>
             <Button
               onClick={onRemove}
               background={
@@ -91,7 +91,7 @@ export const App = hot(
                 store.theme['dialog.lightForeground'] ? 'white' : 'black'
               }
             >
-              Remove
+              删除
             </Button>
           </Buttons>
         </StyledApp>

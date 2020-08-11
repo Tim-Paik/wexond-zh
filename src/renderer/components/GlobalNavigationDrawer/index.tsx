@@ -38,19 +38,19 @@ export const GlobalNavigationDrawer = () => {
   return (
     <NavigationDrawer dense title="">
       <MenuItem name="settings" icon={ICON_SETTINGS}>
-        Settings
+        设置
       </MenuItem>
       <MenuItem name="history" icon={ICON_HISTORY}>
-        History
+        历史记录
       </MenuItem>
       <MenuItem name="bookmarks" icon={ICON_BOOKMARKS}>
-        Bookmarks
+        书签
       </MenuItem>
       <MenuItem name="downloads" icon={ICON_DOWNLOAD}>
-        Downloads
+        下载内容
       </MenuItem>
       <MenuItem name="extensions" icon={ICON_EXTENSIONS}>
-        Extensions
+        扩展程序
       </MenuItem>
     </NavigationDrawer>
   );

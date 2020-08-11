@@ -24,15 +24,15 @@ const ThemeVariant = observer(() => {
 
   return (
     <Row>
-      <Title>Theme variant</Title>
+      <Title>主题</Title>
       <Control>
         <Dropdown
           defaultValue={store.settings.themeAuto ? 'auto' : defaultValue}
           onChange={onThemeChange}
         >
-          <Dropdown.Item value="auto">Auto</Dropdown.Item>
-          <Dropdown.Item value="wexond-light">Light</Dropdown.Item>
-          <Dropdown.Item value="wexond-dark">Dark</Dropdown.Item>
+          <Dropdown.Item value="auto">跟随系统</Dropdown.Item>
+          <Dropdown.Item value="wexond-light">浅色</Dropdown.Item>
+          <Dropdown.Item value="wexond-dark">深色</Dropdown.Item>
         </Dropdown>
       </Control>
     </Row>
@@ -47,14 +47,14 @@ const onTopBarChange = (value: TopBarVariant) => {
 const TopBarVariant = observer(() => {
   return (
     <Row>
-      <Title>Top bar variant</Title>
+      <Title>标题栏样式</Title>
       <Control>
         <Dropdown
           defaultValue={store.settings.topBarVariant}
           onChange={onTopBarChange}
         >
-          <Dropdown.Item value="default">Full</Dropdown.Item>
-          <Dropdown.Item value="compact">Compact</Dropdown.Item>
+          <Dropdown.Item value="default">完整</Dropdown.Item>
+          <Dropdown.Item value="compact">紧凑</Dropdown.Item>
         </Dropdown>
       </Control>
     </Row>
@@ -66,7 +66,7 @@ const WarnQuit = observer(() => {
 
   return (
     <Row onClick={onSwitchChange('warnOnQuit')}>
-      <Title>Show warning dialog when closing multiple tabs</Title>
+      <Title>关闭多个选项卡时显示警告</Title>
       <Control>
         <Switch value={warnOnQuit} />
       </Control>
@@ -79,7 +79,7 @@ const MenuAnimations = observer(() => {
 
   return (
     <Row onClick={onSwitchChange('animations')}>
-      <Title>Menu animations</Title>
+      <Title>菜单动画</Title>
       <Control>
         <Switch value={animations} />
       </Control>
@@ -92,7 +92,7 @@ const BookmarksBar = observer(() => {
 
   return (
     <Row onClick={onSwitchChange('bookmarksBar')}>
-      <Title>Show bookmarks bar</Title>
+      <Title>显示书签栏</Title>
       <Control>
         <Switch value={bookmarksBar} />
       </Control>
@@ -103,7 +103,7 @@ const BookmarksBar = observer(() => {
 export const Appearance = observer(() => {
   return (
     <>
-      <Header>Appearance</Header>
+      <Header>外观</Header>
       {/* <MenuAnimations /> */}
       <BookmarksBar />
       <WarnQuit />

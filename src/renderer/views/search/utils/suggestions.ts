@@ -90,7 +90,7 @@ export const getSearchSuggestions = (filter: string) =>
 
     try {
       if (store.searchEngine.keywordsUrl === '')
-        return reject(new Error('No search engine keyword URL specified'));
+        return reject(new Error('未指定搜索引擎关键字网址'));
 
       const data = JSON.parse(
         (

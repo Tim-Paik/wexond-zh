@@ -41,11 +41,11 @@ const Menu = observer(() => {
     >
       {item && item.type === 'address' && (
         <ContextMenuItem icon={ICON_EDIT} onClick={onEditClick}>
-          Edit
+          编辑
         </ContextMenuItem>
       )}
       <ContextMenuItem icon={ICON_TRASH} onClick={onRemoveClick}>
-        Remove
+        移除
       </ContextMenuItem>
     </ContextMenu>
   );
@@ -54,7 +54,7 @@ const Menu = observer(() => {
 export const Autofill = () => {
   return (
     <>
-      <Header style={{ paddingBottom: 12 }}>Autofill</Header>
+      <Header style={{ paddingBottom: 12 }}>自动填充</Header>
       <Passwords />
       <Addresses />
       <Menu />

@@ -13,7 +13,7 @@ const AskToggle = observer(() => {
 
   return (
     <Row onClick={onSwitchChange('downloadsDialog')}>
-      <Title>Ask where to save each file before downloading</Title>
+      <Title>下载前询问每个文件的保存位置</Title>
       <Control>
         <Switch value={downloadsDialog} />
       </Control>
@@ -29,12 +29,12 @@ const Location = observer(() => {
   return (
     <Row>
       <div>
-        <Title>Location</Title>
+        <Title>保存位置</Title>
         <SecondaryText>{store.settings.downloadsPath}</SecondaryText>
       </div>
 
       <Control>
-        <NormalButton onClick={onChangeClick}>Change</NormalButton>
+        <NormalButton onClick={onChangeClick}>修改</NormalButton>
       </Control>
     </Row>
   );
@@ -43,7 +43,7 @@ const Location = observer(() => {
 export const Downloads = () => {
   return (
     <>
-      <Header>Downloads</Header>
+      <Header>下载内容</Header>
       <Location />
       <AskToggle />
     </>

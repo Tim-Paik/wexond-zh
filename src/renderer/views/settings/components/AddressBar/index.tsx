@@ -21,7 +21,7 @@ const SuggestionsToggle = observer(() => {
 
   return (
     <Row onClick={onSwitchChange('suggestions')}>
-      <Title>Show search and site suggestions</Title>
+      <Title>显示搜索和网站建议</Title>
       <Control>
         <Switch value={suggestions} />
       </Control>
@@ -42,7 +42,7 @@ const SearchEngineRow = observer(() => {
 
   return (
     <Row>
-      <Title>Search engine used in the address bar</Title>
+      <Title>地址栏中使用的搜索引擎</Title>
       <Control>
         <Dropdown defaultValue={se.name} onChange={onSearchEngineChange}>
           {Object.values(store.settings.searchEngines).map((item, key) => (
@@ -104,19 +104,19 @@ export const ManageSearchEngines = observer(() => {
     <>
       <Header>
         <Back onClick={onBackClick} />
-        Manage search engines
+        管理搜索引擎
       </Header>
       <Row>
-        <Title>Address bar search engines</Title>
+        <Title>地址栏中使用的搜索引擎</Title>
         <Control>
-          <NormalButton onClick={onAddClick}>Add</NormalButton>
+          <NormalButton onClick={onAddClick}>添加</NormalButton>
         </Control>
       </Row>
       <EnginesTable>
         <TableRow>
-          <TableHeader>Search engine</TableHeader>
-          <TableHeader>Keyword</TableHeader>
-          <TableHeader>URL</TableHeader>
+          <TableHeader>搜索引擎</TableHeader>
+          <TableHeader>关键字</TableHeader>
+          <TableHeader>查询网址</TableHeader>
           <TableHeader></TableHeader>
         </TableRow>
         {store.settings.searchEngines.map((item, key) => (
@@ -134,11 +134,11 @@ const onManageSearchEngines = () => {
 export const AddressBar = observer(() => {
   return (
     <>
-      <Header>Address bar</Header>
+      <Header>地址栏</Header>
       <SuggestionsToggle />
       <SearchEngineRow />
       <Row onClick={onManageSearchEngines}>
-        <Title>Manage search engines</Title>
+        <Title>管理搜索引擎</Title>
         <Control></Control>
       </Row>
     </>

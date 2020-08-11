@@ -16,11 +16,11 @@ export default observer(() => {
     >
       <Title>Edit address</Title>
       <Content>
-        <Textfield label="Name" />
-        <Textfield label="Street address" />
+        <Textfield label="名字" />
+        <Textfield label="街道地址" />
         <Row>
-          <Textfield label="Postal code" style={{ marginRight: 24 }} />
-          <Textfield label="City " />
+          <Textfield label="邮政编码" style={{ marginRight: 24 }} />
+          <Textfield label="城市 " />
         </Row>
         <Dropdown>
           <Dropdown.Item value="pl">Poland</Dropdown.Item>
@@ -28,7 +28,7 @@ export default observer(() => {
       </Content>
       <Buttons>
         <CloseButton />
-        <Button>Save</Button>
+        <Button>保存</Button>
       </Buttons>
     </Dialog>
   );
