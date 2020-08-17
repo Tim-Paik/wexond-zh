@@ -20,7 +20,7 @@ export const getViewMenu = (
   if (params.linkURL !== '') {
     menuItems = menuItems.concat([
       {
-        label: 'Open link in new tab',
+        label: '在新标签页中打开链接',
         click: () => {
           appWindow.viewManager.create(
             {
@@ -35,7 +35,7 @@ export const getViewMenu = (
         type: 'separator',
       },
       {
-        label: 'Copy link address',
+        label: '复制链接地址',
         click: () => {
           clipboard.clear();
           clipboard.writeText(params.linkURL);
@@ -50,7 +50,7 @@ export const getViewMenu = (
   if (params.hasImageContents) {
     menuItems = menuItems.concat([
       {
-        label: 'Open image in new tab',
+        label: '在新标签页中打开图片',
         click: () => {
           appWindow.viewManager.create(
             {
@@ -62,18 +62,18 @@ export const getViewMenu = (
         },
       },
       {
-        label: 'Copy image',
+        label: '复制图片',
         click: () => webContents.copyImageAt(params.x, params.y),
       },
       {
-        label: 'Copy image address',
+        label: '复制图片地址',
         click: () => {
           clipboard.clear();
           clipboard.writeText(params.srcURL);
         },
       },
       {
-        label: 'Save image as...',
+        label: '图片另存为...',
         click: () => {
           appWindow.webContents.downloadURL(params.srcURL);
         },
@@ -89,10 +89,12 @@ export const getViewMenu = (
       {
         role: 'undo',
         accelerator: 'CmdOrCtrl+Z',
+        label: '撤销',
       },
       {
         role: 'redo',
         accelerator: 'CmdOrCtrl+Shift+Z',
+        label: '恢复',
       },
       {
         type: 'separator',
@@ -100,24 +102,27 @@ export const getViewMenu = (
       {
         role: 'cut',
         accelerator: 'CmdOrCtrl+X',
+        label: '剪切',
       },
       {
         role: 'copy',
         accelerator: 'CmdOrCtrl+C',
+        label: '复制',
       },
       {
         role: 'pasteAndMatchStyle',
         accelerator: 'CmdOrCtrl+V',
-        label: 'Paste',
+        label: '粘贴为目标样式',
       },
       {
         role: 'paste',
         accelerator: 'CmdOrCtrl+Shift+V',
-        label: 'Paste as plain text',
+        label: '粘贴为纯文本',
       },
       {
         role: 'selectAll',
         accelerator: 'CmdOrCtrl+A',
+        label: '全选',
       },
       {
         type: 'separator',
@@ -130,6 +135,7 @@ export const getViewMenu = (
       {
         role: 'copy',
         accelerator: 'CmdOrCtrl+C',
+        label: '复制',
       },
       {
         type: 'separator',
@@ -143,7 +149,7 @@ export const getViewMenu = (
     if (isURL(trimmedText)) {
       menuItems = menuItems.concat([
         {
-          label: 'Go to ' + trimmedText,
+          label: '跳转到 ' + trimmedText,
           click: () => {
             appWindow.viewManager.create(
               {
@@ -169,7 +175,7 @@ export const getViewMenu = (
   ) {
     menuItems = menuItems.concat([
       {
-        label: 'Go back',
+        label: '后退',
         accelerator: 'Alt+Left',
         enabled: webContents.canGoBack(),
         click: () => {
@@ -177,7 +183,7 @@ export const getViewMenu = (
         },
       },
       {
-        label: 'Go forward',
+        label: '前进',
         accelerator: 'Alt+Right',
         enabled: webContents.canGoForward(),
         click: () => {
@@ -185,7 +191,7 @@ export const getViewMenu = (
         },
       },
       {
-        label: 'Reload',
+        label: '重新加载',
         accelerator: 'CmdOrCtrl+R',
         click: () => {
           webContents.reload();
@@ -195,14 +201,14 @@ export const getViewMenu = (
         type: 'separator',
       },
       {
-        label: 'Save as...',
+        label: '保存为...',
         accelerator: 'CmdOrCtrl+S',
         click: async () => {
           saveAs();
         },
       },
       {
-        label: 'Print',
+        label: '打印',
         accelerator: 'CmdOrCtrl+P',
         click: async () => {
           printPage();
@@ -212,7 +218,7 @@ export const getViewMenu = (
         type: 'separator',
       },
       {
-        label: 'View page source',
+        label: '查看网页源代码',
         accelerator: 'CmdOrCtrl+U',
         click: () => {
           viewSource();
@@ -222,7 +228,7 @@ export const getViewMenu = (
   }
 
   menuItems.push({
-    label: 'Inspect',
+    label: '检查',
     accelerator: 'CmdOrCtrl+Shift+I',
     click: () => {
       webContents.inspectElement(params.x, params.y);

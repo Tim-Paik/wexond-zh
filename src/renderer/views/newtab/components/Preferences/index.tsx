@@ -88,7 +88,7 @@ export const Preferences = observer(() => {
                 : 'translateX(-100%)',
           }}
         >
-          <Title style={{ marginLeft: 20 }}>Page layout</Title>
+          <Title style={{ marginLeft: 20 }}>页面布局</Title>
 
           <ContextMenuSeparator bigger></ContextMenuSeparator>
 
@@ -99,7 +99,7 @@ export const Preferences = observer(() => {
             iconSize={28}
             icon={ICON_WINDOW}
           >
-            Focused
+            专注
           </ContextMenuItem>
           <ContextMenuItem
             bigger
@@ -108,7 +108,7 @@ export const Preferences = observer(() => {
             iconSize={28}
             icon={ICON_WINDOW}
           >
-            Inspirational
+            壁纸
           </ContextMenuItem>
           <ContextMenuItem
             bigger
@@ -117,7 +117,7 @@ export const Preferences = observer(() => {
             iconSize={28}
             icon={ICON_WINDOW}
           >
-            Informational
+            新闻
           </ContextMenuItem>
           <ContextMenuItem
             bigger
@@ -126,7 +126,7 @@ export const Preferences = observer(() => {
             iconSize={28}
             icon={ICON_WINDOW}
           >
-            Custom
+            自定义
           </ContextMenuItem>
         </div>
         <div
@@ -146,33 +146,33 @@ export const Preferences = observer(() => {
         >
           <Title>
             <Back onClick={onBackClick} icon={ICON_BACK}></Back>
-            Custom
+            自定义
           </Title>
           <ContextMenuSeparator bigger></ContextMenuSeparator>
-          <SwitchItem name="imageVisible">Show image</SwitchItem>
+          <SwitchItem name="imageVisible">显示壁纸</SwitchItem>
           <SwitchItem disabled={!store.imageVisible} name="changeImageDaily">
-            Change the image daily
+            每天更换壁纸
           </SwitchItem>
           <ContextMenuItem
             bigger
             disabled={!store.imageVisible || store.changeImageDaily}
           >
-            Choose image...
+            选择一张图片...
           </ContextMenuItem>
           <ContextMenuSeparator bigger></ContextMenuSeparator>
-          <SwitchItem name="topSitesVisible">Show top sites</SwitchItem>
-          <SwitchItem name="quickMenuVisible">Show quick menu</SwitchItem>
+          <SwitchItem name="topSitesVisible">显示最近访问</SwitchItem>
+          <SwitchItem name="quickMenuVisible">显示快捷菜单</SwitchItem>
           <ContextMenuSeparator bigger></ContextMenuSeparator>
-          <SubTitle>News visibility:</SubTitle>
+          <SubTitle>新闻显示:</SubTitle>
           <Dropdown
             defaultValue={store.newsBehavior}
             onMouseDown={() => (store.overflowVisible = true)}
             style={{ margin: '0 20px 8px' }}
             onChange={onNewsVisibilityChange}
           >
-            <Dropdown.Item value="always-visible">Always visible</Dropdown.Item>
-            <Dropdown.Item value="hidden">Hidden</Dropdown.Item>
-            <Dropdown.Item value="on-scroll">Visible on scroll</Dropdown.Item>
+            <Dropdown.Item value="always-visible">始终可见</Dropdown.Item>
+            <Dropdown.Item value="hidden">隐藏</Dropdown.Item>
+            <Dropdown.Item value="on-scroll">下滑可见</Dropdown.Item>
           </Dropdown>
         </div>
       </div>

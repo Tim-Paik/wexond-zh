@@ -102,7 +102,7 @@ export const QuickMenu = observer(() => {
             <>
               <MenuItem onClick={onUpdateClick}>
                 <Icon icon={ICON_FIRE}></Icon>
-                <MenuItemTitle>Update {remote.app.name}</MenuItemTitle>
+                <MenuItemTitle>升级 {remote.app.name}</MenuItemTitle>
               </MenuItem>
               <Line />
             </>

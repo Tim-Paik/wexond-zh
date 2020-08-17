@@ -38,52 +38,52 @@ export const getMainMenu = () => {
   const template: any = [
     ...(isMac
       ? [
-        {
-          label: app.name,
-          submenu: [
-            { role: 'about' },
-            { type: 'separator' },
-            { role: 'services' },
-            { type: 'separator' },
-            { role: 'hide' },
-            { role: 'hideothers' },
-            { role: 'unhide' },
-            { type: 'separator' },
-            { role: 'quit' },
-          ],
-        },
-      ]
+          {
+            label: app.name,
+            submenu: [
+              { role: 'about' },
+              { type: 'separator' },
+              { role: 'services' },
+              { type: 'separator' },
+              { role: 'hide' },
+              { role: 'hideothers' },
+              { role: 'unhide' },
+              { type: 'separator' },
+              { role: 'quit' },
+            ],
+          },
+        ]
       : []),
     {
-      label: 'File',
+      label: '文件',
       submenu: [
         ...createMenuItem(
           ['CmdOrCtrl+N'],
           () => {
             Application.instance.windows.open();
           },
-          'New window',
+          '新建窗口',
         ),
         ...createMenuItem(
           ['CmdOrCtrl+Shift+N'],
           () => {
             Application.instance.windows.open(true);
           },
-          'New incognito window',
+          '新建无痕窗口',
         ),
         ...createMenuItem(
           ['CmdOrCtrl+T'],
           (window) => {
             window.viewManager.create(defaultTabOptions);
           },
-          'New tab',
+          '新建标签页',
         ),
         ...createMenuItem(
           ['CmdOrCtrl+Shift+T'],
           (window) => {
             window.send('revert-closed-tab');
           },
-          'Revert closed tab',
+          '还原关闭的标签页',
         ),
         {
           type: 'separator',
@@ -93,14 +93,14 @@ export const getMainMenu = () => {
           (window) => {
             window.win.close();
           },
-          'Close window',
+          '关闭窗口',
         ),
         ...createMenuItem(
           ['CmdOrCtrl+W', 'CmdOrCtrl+F4'],
           (window) => {
             window.send('remove-tab', window.viewManager.selectedId);
           },
-          'Close tab',
+          '关闭标签页',
         ),
         {
           type: 'separator',
@@ -110,7 +110,7 @@ export const getMainMenu = () => {
           () => {
             saveAs();
           },
-          'Save webpage as...',
+          '网页另存为...',
         ),
         {
           type: 'separator',
@@ -120,7 +120,7 @@ export const getMainMenu = () => {
           () => {
             printPage();
           },
-          'Print',
+          '打印',
         ),
 
         // Hidden items
@@ -139,7 +139,7 @@ export const getMainMenu = () => {
       ],
     },
     {
-      label: 'Edit',
+      label: '编辑',
       submenu: [
         { role: 'undo' },
         { role: 'redo' },
@@ -165,31 +165,31 @@ export const getMainMenu = () => {
           () => {
             Application.instance.windows.current.send('find');
           },
-          'Find in page',
+          '查找',
         ),
       ],
     },
     {
-      label: 'View',
+      label: '查看',
       submenu: [
         ...createMenuItem(
           ['CmdOrCtrl+R', 'F5'],
           () => {
             Application.instance.windows.current.viewManager.selected.webContents.reload();
           },
-          'Reload',
+          '重新加载',
         ),
         ...createMenuItem(
           ['CmdOrCtrl+Shift+R', 'Shift+F5'],
           () => {
             Application.instance.windows.current.viewManager.selected.webContents.reloadIgnoringCache();
           },
-          'Reload ignoring cache',
+          '清空缓存并重新加载',
         ),
       ],
     },
     {
-      label: 'History',
+      label: '历史记录',
       submenu: [
         // TODO: Homepage - Ctrl+Shift+H
         ...createMenuItem(
@@ -202,7 +202,7 @@ export const getMainMenu = () => {
               selected.webContents.goBack();
             }
           },
-          'Go back',
+          '后退',
         ),
         ...createMenuItem(
           isMac ? ['Cmd+]', 'Cmd+Right'] : ['Alt+Right'],
@@ -214,7 +214,7 @@ export const getMainMenu = () => {
               selected.webContents.goForward();
             }
           },
-          'Go forward',
+          '前进',
         ),
         // { type: 'separator' }
         // TODO: list last closed tabs
@@ -229,12 +229,12 @@ export const getMainMenu = () => {
               active: true,
             });
           },
-          'Manage history',
+          '管理历史记录',
         ),
       ],
     },
     {
-      label: 'Bookmarks',
+      label: '书签',
       submenu: [
         ...createMenuItem(
           isMac ? ['Cmd+Option+B'] : ['CmdOrCtrl+Shift+O'],
@@ -244,7 +244,7 @@ export const getMainMenu = () => {
               active: true,
             });
           },
-          'Manage bookmarks',
+          '管理书签',
         ),
         ...createMenuItem(
           ['CmdOrCtrl+Shift+B'],
@@ -254,7 +254,7 @@ export const getMainMenu = () => {
               bookmarksBar: !bookmarksBar,
             });
           },
-          'Toggle bookmarks bar',
+          '切换书签栏',
         ),
         ...createMenuItem(
           ['CmdOrCtrl+D'],
@@ -263,14 +263,14 @@ export const getMainMenu = () => {
               'show-add-bookmark-dialog',
             );
           },
-          'Add this website to bookmarks',
+          '为此网站添加书签',
         ),
         // { type: 'separator' }
         // TODO: list bookmarks
       ],
     },
     {
-      label: 'Tools',
+      label: '工具',
       submenu: [
         {
           label: 'Developer',
@@ -280,7 +280,7 @@ export const getMainMenu = () => {
               () => {
                 viewSource();
               },
-              'View source',
+              '查看源代码',
             ),
             ...createMenuItem(
               ['CmdOrCtrl+Shift+I', 'CmdOrCtrl+Shift+J', 'F12'],
@@ -289,7 +289,7 @@ export const getMainMenu = () => {
                   Application.instance.windows.current.viewManager.selected.webContents.toggleDevTools();
                 });
               },
-              'Developer tools...',
+              '开发者工具...',
             ),
 
             // Developer tools (current webContents) (dev)
@@ -305,7 +305,7 @@ export const getMainMenu = () => {
       ],
     },
     {
-      label: 'Tab',
+      label: '标签页',
       submenu: [
         ...createMenuItem(
           isMac ? ['Cmd+Option+Right'] : ['Ctrl+Tab', 'Ctrl+PageDown'],
@@ -314,7 +314,7 @@ export const getMainMenu = () => {
               'select-next-tab',
             );
           },
-          'Select next tab',
+          '选择下一个标签',
         ),
         ...createMenuItem(
           isMac ? ['Cmd+Option+Left'] : ['Ctrl+Shift+Tab', 'Ctrl+PageUp'],
@@ -323,12 +323,12 @@ export const getMainMenu = () => {
               'select-previous-tab',
             );
           },
-          'Select previous tab',
+          '选择上一个标签',
         ),
       ],
     },
     {
-      label: 'Window',
+      label: '窗口',
       submenu: [
         { role: 'minimize' },
         { role: 'togglefullscreen' },
@@ -343,7 +343,7 @@ export const getMainMenu = () => {
           : [{ role: 'close', accelerator: '' }]),
         { type: 'separator' },
         {
-          label: 'Always on top',
+          label: '总是置顶',
           type: 'checkbox',
           checked: false,
           click(menuItem: MenuItem, browserWindow: BrowserWindow) {
