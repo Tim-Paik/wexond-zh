@@ -1,3 +1,6 @@
+> 此仓库为 [Wexond](https://github.com/wexond/desktop) 的汉化版本，原版请见链接
+> 汉化版本下载地址：[最新](https://github.com/Tim-Paik/desktop/releases)
+
 <p align="center">
   <a href="https://wexond.net"><img src="static/icons/icon.png" width="256"></a>
 </p>
@@ -11,91 +14,96 @@
 [![PayPal](https://img.shields.io/badge/PayPal-Donate-brightgreen?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VCPPFUAL4R6M6&source=url)
 [![Discord](https://discordapp.com/api/guilds/307605794680209409/widget.png?style=shield)](https://discord.gg/P7Vn4VX)
 
-Wexond is an extensible and privacy-focused web browser with a totally different user experience, built on top of `Electron` and `React`. It aims to be fast, private, beautiful, extensible and functional.
+Wexond是一种可扩展的，注重隐私的Web浏览器，具有完全不同的用户体验，建立在`Electron`和`React`的基础上。 它旨在快速，私密，美观，可扩展和实用。
 
 </div>
 
-# Features
+# 特点
 
-- **Wexond Shield** - Browse the web without any ads and don't let websites to track you. Thanks to the Wexond Shield powered by [Cliqz](https://github.com/cliqz-oss/adblocker), websites can load even 8 times faster!
-- **Chromium without Google services and low resources usage** - Since Wexond uses Electron under the hood which is based on only several and the most important Chromium components, it's not bloated with redundant Google tracking services and others.
-- **Beautiful and modern UI**
-- **Fast and fluent UI** - The animations are really smooth and their timings are perfectly balanced.
-- **Highly customizable new tab page** - Customize almost an every aspect of the new tab page!
-- **Customizable browser UI** - Choose whether Wexond should have compact or normal UI.
-- **Tab groups** - Easily group tabs, so it's hard to get lost.
-- **Scrollable tabs**
-- **Partial support for Chrome extensions** - Install some extensions directly from Chrome Web Store\* (see [#110](https://github.com/wexond/wexond/issues/110)) (WIP)
-- **Packages** - Extend Wexond for your needs, by installing or developing your own packages and themes\* ([#147](https://github.com/wexond/wexond/issues/147)) (WIP)
+- **Wexond 盾牌** - 浏览网络时没有任何广告，也不会让网站跟踪您。感谢 [Cliqz](https://github.com/cliqz-oss/adblocker)支持的Wexond Shield，网站的加载速度甚至提高了8倍！
+- **没有Google服务且资源使用率较低的Chromium** - 由于Wexond在覆盖层（仅基于几个也是最重要的Chromium组件）下使用了Electron，因此不会因多余的Google跟踪服务和其他服务而肿。
+- **美丽而现代的用户界面UI**
+- **快速流畅的用户界面UI** - 动画非常流畅，并且它们的时间安排完美平衡。
+- **高度可定制的新标签页** - 自定义新标签页的几乎所有方面！
+- **可自定义的浏览器用户界面** - 选择Wexond应该具有紧凑的UI还是普通的UI。
+- **标签组** - 轻松对标签进行分组，因此很难丢失。
+- **可滚动的标签**
+- **对Chrome扩展程序的部分支持** - 直接从Chrome网上应用店安装一些扩展程序\* (参见 [#110](https://github.com/wexond/wexond/issues/110)) (WIP)
+- **配套** - 通过安装或开发自己的包和主题来扩展Wexond以满足您的需求\* ([#147](https://github.com/wexond/wexond/issues/147)) (WIP)
 
-# Screenshots
+# 屏幕截图
 
-![image](https://user-images.githubusercontent.com/11065386/81024159-d9388f80-8e72-11ea-85e7-6c30e3b66554.png)
+![image](https://user-images.githubusercontent.com/49786711/90972426-7f57f480-e54b-11ea-9df3-d9bdeeb86e94.png)
 
-UI normal variant:
-![image](https://user-images.githubusercontent.com/11065386/81024186-f40b0400-8e72-11ea-976e-cd1ca1b43ad8.png)
+UI 完整标题栏：
+![image](https://user-images.githubusercontent.com/49786711/90972429-8b43b680-e54b-11ea-8dc3-629c7c556577.png)
 
-UI compact variant:
-![image](https://user-images.githubusercontent.com/11065386/81024222-13099600-8e73-11ea-9fc9-3c63a034403d.png)
-![image](https://user-images.githubusercontent.com/11065386/81024252-2ddc0a80-8e73-11ea-9f2f-6c9a4a175c60.png)
+UI 紧凑标题栏：
+![image](https://user-images.githubusercontent.com/49786711/90972430-8c74e380-e54b-11ea-983b-d3497bbd27d7.png)
+![image](https://user-images.githubusercontent.com/49786711/90972480-ef667a80-e54b-11ea-82ec-3be4736e42f5.png)
 
-# Downloads
+# 下载
+
+## 汉化版本
+- [最新](https://github.com/Tim-Paik/desktop/releases)
+
+## 原版
 - [Stable and beta versions](https://github.com/wexond/desktop/releases)
 - [Nightlies](https://github.com/wexond/desktop-nightly/releases)
 
-# [Roadmap](https://github.com/wexond/wexond/projects)
+# [路线图](https://github.com/wexond/wexond/projects)
 
-# Contributing
+# 贡献
 
-If you have found any bugs or just want to see some new features in Wexond, feel free to open an issue. We're open to any suggestions. Bug reports would be really helpful for us and appreciated very much. Wexond is in heavy development and some bugs may occur. Also, please don't hesitate to open a pull request. This is really important to us and for the further development of this project.
+如果您发现任何错误，或者只是想在Wexond中查看一些新功能，请随时提出问题。 我们欢迎任何建议。 错误报告对我们真的很有帮助，非常感谢。 Wexond正在大量开发中，并且可能会出现一些错误。 另外，请不要犹豫，打开拉取请求。 这对于我们以及该项目的进一步发展非常重要。
 
-## Running
+## 启动
 
-Before running Wexond, please ensure you have **latest** [`Node.js`](https://nodejs.org/en/) and [`Yarn`](https://classic.yarnpkg.com/en/docs/install/#windows-stable) installed on your machine.
+在运行Wexond之前，请确保您已经安装 **最新版本的** [`Node.js`](https://nodejs.org/en/) 和 [`Yarn`](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 
-When running on Windows, make sure you have build tools installed. You can install them by running this command as **administrator**:
+在Windows上运行时，请确保已安装了构建工具。 您可以通过以**管理员身份**运行以下命令来安装它们：
 
 ```bash
 $ npm i -g windows-build-tools
 ```
 
-Firstly, run this command to install all needed dependencies. If you have encountered any problems, please report it.
+首先，运行此命令以安装所有需要的依赖项。 如果您遇到任何问题，请报告。
 
 ```bash
 $ yarn
 ```
 
-After a successful installation, the native modules need to be rebuilt using Electron headers. To do this, run:
+成功安装后，需要使用Electron headers重建本机模块。 为此，请运行：
 
 ```bash
 $ npm run rebuild
 ```
 
-The given command below will run Wexond in the development mode.
+下面给定的命令将在开发模式下运行Wexond。
 
 ```bash
 $ npm run dev
 ```
 
-# Documentation
+# 文档
 
-Guides and the API reference are located in [`docs`](docs) directory.
+指南和API参考位于 [`docs`](docs) 目录中。
 
-### Sponsors
+### 赞助商
 
 [![Sponsors](https://opencollective.com/wexond/tiers/sponsor.svg?avatarHeight=48)](https://opencollective.com/wexond)
 
-### Backers
+### 支持者
 
 [![Backers](https://opencollective.com/wexond/tiers/backer.svg?avatarHeight=48)](https://opencollective.com/wexond)
 
-## License
+## 许可证
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwexond%2Fwexond.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwexond%2Fwexond?ref=badge_large)
 
 # FAQ
 
-## Why Electron?
+## 为什么使用Electron?
 
-Wexond has been hated by many people for using Electron by saying things like it's a web browser inside a web browser.
-It's somewhat true, but technically it doesn't matter (also please keep in mind that browsers like Firefox also have the UI built with web technologies). It doesn't make the browser any slower or heavier, it's rather the opposite based on Wexond resources usage compared to Chrome. Choosing Electron was the best option to build the browser. We can build the UI however we want and make the customization even better. We don't have enough resources to build Chromium for weeks and edit almost 25 million lines of code and search for weeks for example the code responsible for changing button icons. Instead we chose Electron which uses only several Chromium components required to properly display the external content without any of the Google services, which makes the browser much lighter. Despite using only some part of Chromium, it doesn't really affect on the browser functionalities. We can implement all of the Chromium features except the Google services.
+Wexond被很多人讨厌使用Electron，因为它说的是Web浏览器内部的Web浏览器。
+的确有些正确，但从技术上讲并不重要（还请记住，像Firefox这样的浏览器也具有使用Web技术构建的UI）。它不会使浏览器变慢或变重，与Chrome相比，基于Wexond资源使用情况恰好相反。选择Electron是构建浏览器的最佳选择。我们可以根据需要构建UI，并使自定义更好。我们没有足够的资源来构建Chromium数周，也无法编辑将近2500万行的代码并搜索数周，例如，负责更改按钮图标的代码。相反，我们选择了Electron，它仅使用几个Chromium组件即可正确显示外部内容，而没有任何Google服务，这使浏览器更轻便。尽管只使用了Chromium的一部分，但它并没有真正影响浏览器的功能。我们可以实现除Google服务以外的所有Chromium功能。

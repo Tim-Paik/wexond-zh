@@ -1,6 +1,6 @@
-# Documentation
+# 文档
 
-## Table of contents
+## 目录
 
-1. [Keyboard shortcuts](keyboard-shortcuts.md)
-2. [Extensions](extensions.md)
+1. [快捷键](keyboard-shortcuts.md)
+2. [控制程序](extensions.md)

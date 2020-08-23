@@ -1,79 +1,79 @@
-# Available keyboard shortcuts in Wexond
+# Wexond中可用的键盘快捷键
 
-## Windows and Linux
+## Windows 和 Linux
 
-### Tab and window shortcuts
+### 标签和窗口快捷方式
 
-| Action                      | Shortcut                         |
-| --------------------------- | -------------------------------- |
-| Open a new window           | `Ctrl + N`                       |
-| Open a new incognito window | `Ctrl + Shift + N`               |
-| Open a new tab              | `Ctrl + T`                       |
-| Select next tab             | `Ctrl + Tab`                     |
-| Select previous tab         | `Ctrl + Shift + Tab`             |
-| Select specific tab         | `Ctrl + 1` to `Ctrl + 8`         |
-| Select the rightmost tab    | `Ctrl + 9`                       |
-| Go back                     | `Alt + Left Arrow`               |
-| Go forward                  | `Alt + Right Arrow`              |
-| Close selected tab          | `Ctrl + W` or `Ctrl + F4`        |
-| Close current window        | `Ctrl + Shift + W` or `Alt + F4` |
-| Close Wexond                | `Ctrl + Shift + Q`               |
+| 动作             | 快捷键                           |
+| ---------------- | -------------------------------- |
+| 新建窗口         | `Ctrl + N`                       |
+| 新建无痕窗口     | `Ctrl + Shift + N`               |
+| 新建标签页       | `Ctrl + T`                       |
+| 选择下一个标签页 | `Ctrl + Tab`                     |
+| 选择上一个标签页 | `Ctrl + Shift + Tab`             |
+| 选择特定标签页   | `Ctrl + 1` to `Ctrl + 8`         |
+| 选择最右边的标签 | `Ctrl + 9`                       |
+| 后退             | `Alt + Left Arrow`               |
+| 前进             | `Alt + Right Arrow`              |
+| 关闭所选标签页   | `Ctrl + W` or `Ctrl + F4`        |
+| 关闭当前窗口     | `Ctrl + Shift + W` or `Alt + F4` |
+| 关闭 Wexond      | `Ctrl + Shift + Q`               |
 
-### Wexond feature shortcuts
+### Wexond 功能快捷键
 
-| Action                                  | Shortcut                        |
+| 动作                                    | 快捷键                        |
 | --------------------------------------- | ------------------------------- |
-| Focus the address bar                   | `Ctrl + L` or `Alt + D` or `F6` |
-| Open the menu                           | `Alt + F` or `Alt + E`          |
-| Open find in page dialog                | `Ctrl + F`                      |
-| Open the Bookmarks Manager in a new tab | `Ctrl + Shift + O`              |
-| Open the History page in a new tab      | `Ctrl + H`                      |
+| 聚焦地址栏              | `Ctrl + L` or `Alt + D` or `F6` |
+| 打开菜单                       | `Alt + F` or `Alt + E`          |
+| 打开在页面中查找对话框     | `Ctrl + F`                      |
+| 在新标签页中打开书签管理器 | `Ctrl + Shift + O`              |
+| 在新标签页中打开“历史记录”页面 | `Ctrl + H`                      |
 
-### Webpage shortcuts
+### 网页快捷键
 
-| Action                           | Shortcut                           |
+| 动作                             | 快捷键                           |
 | -------------------------------- | ---------------------------------- |
-| Reload                           | `F5` or `Ctrl + R`                 |
-| Reload ignoring cache            | `Shift + F5` or `Ctrl + Shift + R` |
-| Go to next clickable element     | `Tab`                              |
-| Go to previous clickable element | `Shift + Tab`                      |
-| Add current website to bookmarks | `Ctrl + D`                         |
+| 重新加载                       | `F5` or `Ctrl + R`                 |
+| 清除缓存并重新加载 | `Shift + F5` or `Ctrl + Shift + R` |
+| 转到下一个可点击的元素 | `Tab`                              |
+| 转到上一个可点击的元素 | `Shift + Tab`                      |
+| 将当前网站添加到书签 | `Ctrl + D`                         |
 
 ## macOS
 
-### Tab and window shortcuts
+### 标签和窗口快捷方式
 
-| Action                      | Shortcut                     |
+| 动作                      | 快捷键                     |
 | --------------------------- | ---------------------------- |
-| Open a new window           | `⌘ + N`                      |
-| Open a new incognito window | `⌘ + Shift + N`              |
-| Open a new tab              | `⌘ + T`                      |
-| Select next tab             | `⌘ + Tab`                    |
-| Select previous tab         | `⌘ + Shift + Tab`            |
-| Select specific tab         | `⌘ + 1` to `⌘ + 8`           |
-| Select the rightmost tab    | `⌘ + 9`                      |
-| Go back                     | `⌘ + [` or `⌘ + Left Arrow`  |
-| Go forward                  | `⌘ + ]` or `⌘ + Right Arrow` |
-| Close selected tab          | `⌘ + W`                      |
-| Close current window        | `⌘ + Shift + W`              |
-| Hide Wexond                 | `⌘ + H`                      |
-| Close Wexond                | `⌘ + Q`                      |
+| 新建窗口       | `⌘ + N`                      |
+| 新建无痕窗口 | `⌘ + Shift + N`              |
+| 新建标签页         | `⌘ + T`                      |
+| 选择下一个标签页     | `⌘ + Tab`                    |
+| 选择上一个标签页 | `⌘ + Shift + Tab`            |
+| 选择特定标签页  | `⌘ + 1` to `⌘ + 8`           |
+| 选择最右边的标签 | `⌘ + 9`                      |
+| 后退                   | `⌘ + [` or `⌘ + Left Arrow`  |
+| 前进                | `⌘ + ]` or `⌘ + Right Arrow` |
+| 关闭所选标签页   | `⌘ + W`                      |
+| 关闭当前窗口  | `⌘ + Shift + W`              |
+| 隐藏 Wexond                 | `⌘ + H`                      |
+| 关闭 Wexond               | `⌘ + Q`                      |
 
-### Wexond feature shortcuts
+### Wexond 功能快捷键
 
-| Action                                  | Shortcut         |
+| 动作                                  | 快捷键         |
 | --------------------------------------- | ---------------- |
-| Focus the address bar                   | `⌘ + L`          |
-| Open find in page dialog                | `⌘ + F`          |
-| Open the Bookmarks Manager in a new tab | `⌘ + Option + B` |
-| Open the History page in a new tab      | `⌘ + Y`          |
+| 聚焦地址栏              | `⌘ + L`          |
+| 打开在页面中查找对话框     | `⌘ + F`          |
+| 在新标签页中打开书签管理器 | `⌘ + Option + B` |
+| 在新标签页中打开“历史记录”页面 | `⌘ + Y`          |
 
-### Webpage shortcuts
+### Webpage 快捷键s
 
-| Action                           | Shortcut        |
+| 动作                           | 快捷键        |
 | -------------------------------- | --------------- |
-| Reload                           | `⌘ + R`         |
-| Reload ignoring cache            | `⌘ + Shift + R` |
-| Go to next clickable element     | `Tab`           |
-| Go to previous clickable element | `Shift + Tab`   |
-| Add current website to bookmarks | `⌘ + D`         |
+| 重新加载                       | `⌘ + R`         |
+| 清除缓存并重新加载   | `⌘ + Shift + R` |
+| 转到下一个可点击的元素 | `Tab`           |
+| 转到上一个可点击的元素 | `Shift + Tab`   |
+| 将当前网站添加到书签 | `⌘ + D`         |
