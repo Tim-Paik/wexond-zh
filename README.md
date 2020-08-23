@@ -42,6 +42,9 @@ UI 紧凑标题栏：
 ![image](https://user-images.githubusercontent.com/49786711/90972430-8c74e380-e54b-11ea-983b-d3497bbd27d7.png)
 ![image](https://user-images.githubusercontent.com/49786711/90972480-ef667a80-e54b-11ea-82ec-3be4736e42f5.png)
 
+标签组：
+![image](https://user-images.githubusercontent.com/49786711/90972431-8da61080-e54b-11ea-949c-cda1c532648c.png)
+
 # 下载
 
 ## 汉化版本
